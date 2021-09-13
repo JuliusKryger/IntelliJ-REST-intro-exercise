@@ -46,7 +46,7 @@ public class AnimalDemo
     public String animalnodb()
     {
         try {
-        AnimalNoDB animalNoDB = new AnimalNoDB("Dog","Bark");
+        AnimalNoDB animalNoDB = new AnimalNoDB("Dog","Mæææh! Woops i mean Wuuf! *Barking*");
         String jsonString = gson.toJson(animalNoDB);
         return jsonString;
         }

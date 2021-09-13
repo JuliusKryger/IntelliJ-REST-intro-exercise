@@ -2,8 +2,8 @@ package com.week4.demo.helloworld.model;
 
 public class AnimalNoDB
 {
-    String animal = "Dog";
-    String sound = "Mæææh! Woops i mean Wuuf! *Barking*";
+    String animal;
+    String sound;
 
     public AnimalNoDB(String animal, String sound)
     {
