@@ -97,15 +97,16 @@ public class AnimalFromDB
         try
         {
             em.getTransaction().begin();
-            if (x != 0 || x != 4)
+            //if (x != 0 || x != 4) #Well this shit doesn't work, and I frankly don't know why
+            Animal y = em.find(Animal.class, x);
+            if ( y != null )
             {
-                Animal y = em.find(Animal.class, x);
                 em.getTransaction().commit();
                 return new Gson().toJson(y);
             }
             else
             {
-                return "Sorry you drew the number zero or the number 4, now you owe me 1000$";
+                return "You got scammed by the random generator and I don't know why, but now you owe me pizza & cola!";
             }
         }
         catch (Exception e)
